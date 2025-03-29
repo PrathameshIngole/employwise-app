@@ -12,7 +12,7 @@ A React application for user authentication and management using the Regres API.
 - Client-side search
 
 ## Live Demo
-[View on Render](https://employwise-app.onrender.com)
+[View on Vercel](https://employwise-app-two.vercel.app/)
 
 ## Installation
 ```bash
