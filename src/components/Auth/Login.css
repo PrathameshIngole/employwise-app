@@ -1,0 +1,191 @@
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 16px;
+    background-color: #f5f7fa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, 
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  /* Login Card */
+  .login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 32px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .login-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  .login-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Login Form */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .input-container {
+    position: relative;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    /* background: inherit; */
+  }
+
+  .input-container:focus-within {
+    border-color: #2196f3;
+
+    /* background: inherit; */
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .login-input {
+    width: 100%;
+    background: inherit;
+    color: #e0e0e0;
+    font-size: 16px;
+    border: none;
+    /* transition: border-color 0.2s, box-shadow 0.2s; */
+  }
+  
+  .login-input:focus {
+    outline: none;
+    /* border-color: #2196f3; */
+    /* box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2); */
+  }
+  
+  /* Login Button */
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 8px;
+  }
+  
+  .login-button:hover {
+    background-color: #1976d2;
+  }
+  
+  .login-button:disabled {
+    background-color: #bbdefb;
+    cursor: not-allowed;
+  }
+  
+  .login-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Alert Styles (consistent with UserList) */
+  .alert {
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+  
+  .alert-error {
+    background-color: #ffebee;
+    color: #c62828;
+    border-left: 4px solid #f44336;
+  }
+  
+  /* Dark Mode Support */
+  @media (prefers-color-scheme: dark) {
+    .login-container {
+      background-color: #121212;
+    }
+  
+    .login-card {
+      background-color: #1e1e1e;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    .login-title {
+      color: #e0e0e0;
+    }
+  
+    /* .login-input {
+      background-color: #2c2c2c;
+      border-color: #333;
+      color: #e0e0e0;
+    }
+   */
+   .eye-icon-button {
+    color: #aaa;
+  }
+  
+  .eye-icon-button:hover {
+    color: #e0e0e0;
+  }
+
+    .input-icon {
+      color: #aaa;
+    }
+  
+    .alert-error {
+      background-color: rgba(244, 67, 54, 0.1);
+      color: #ff8a80;
+    }
+  }
+
+  /* Add to Login.css */
+.eye-icon-button {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .eye-icon-button:hover {
+    color: #333;
+  }
+  
