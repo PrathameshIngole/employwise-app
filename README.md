@@ -59,7 +59,7 @@ Password: cityslicka
 3. Mobile-first design approach.
 
 ## Deployment
-Deployed using Render. The app automatically builds from the main branch.
+Deployed using Vercel. The app automatically builds from the main branch.
 
 ## Available Scripts
 ```bash
